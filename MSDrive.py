@@ -16,7 +16,7 @@ from __future__ import unicode_literals
 
 from contextlib import closing
 
-from . import CloudStorage
+import CloudStorage
 
 
 class MSDriveSession (CloudStorage.CloudOAuth2Session):

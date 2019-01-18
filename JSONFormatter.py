@@ -19,7 +19,7 @@ import re
 
 from libgutenberg.MediaTypes import mediatypes as mt
 
-from . import BaseFormatter
+import BaseFormatter
 
 RE_WORD = re.compile (r'\W+', re.U)
 

@@ -32,7 +32,7 @@ ranges.
 
 from __future__ import unicode_literals
 
-from . import asyncdns
+import asyncdns
 
 # pylint: disable=R0903
 

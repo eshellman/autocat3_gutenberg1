@@ -23,9 +23,9 @@ import genshi.filters
 
 import cherrypy
 
-from . import HTMLFormatter
-from . import OPDSFormatter
-from . import JSONFormatter
+import HTMLFormatter
+import OPDSFormatter
+import JSONFormatter
 
 def format (format_, page, os_):
     """ Main entry point. """

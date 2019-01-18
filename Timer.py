@@ -20,7 +20,7 @@ from __future__ import unicode_literals
 
 import cherrypy
 
-from . import BaseSearcher
+import BaseSearcher
 
 
 class TimerPlugin (cherrypy.process.plugins.Monitor):

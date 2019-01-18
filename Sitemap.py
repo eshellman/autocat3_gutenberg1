@@ -21,8 +21,8 @@ import cherrypy
 
 from libgutenberg.GutenbergGlobals import Struct
 
-from . import TemplatedPage
-from . import BaseSearcher
+import TemplatedPage
+import BaseSearcher
 
 SITEMAP_SIZE = 1000   # max no. of urls to put into one sitemap
 

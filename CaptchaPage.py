@@ -18,8 +18,8 @@ import requests
 import cherrypy
 import logging
 
-from . import Page
-from . import BaseSearcher
+import Page
+import BaseSearcher
 
 #
 # reCaptcha API docs:

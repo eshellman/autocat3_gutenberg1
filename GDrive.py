@@ -17,7 +17,7 @@ from __future__ import unicode_literals
 from contextlib import closing
 import json
 
-from . import CloudStorage
+import CloudStorage
 
 
 class GDriveSession (CloudStorage.CloudOAuth2Session):

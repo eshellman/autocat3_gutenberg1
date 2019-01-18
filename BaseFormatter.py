@@ -27,7 +27,7 @@ import cherrypy
 
 from libgutenberg import GutenbergGlobals as gg
 
-from . import BaseSearcher
+import BaseSearcher
 
 # use a bit more aggressive whitespace removal than the standard whitespace filter
 COLLAPSE_LINES = re.compile('\n[ \t\r\n]+').sub

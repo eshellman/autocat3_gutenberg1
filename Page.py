@@ -21,8 +21,8 @@ import cherrypy
 from libgutenberg.MediaTypes import mediatypes as mt
 from libgutenberg.GutenbergDatabase import DatabaseError
 
-from . import BaseSearcher
-from . import Formatters
+import BaseSearcher
+import Formatters
 
 class Page (object):
     """ Base for all pages. """

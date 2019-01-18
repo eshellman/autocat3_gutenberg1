@@ -33,8 +33,8 @@ from libgutenberg import DublinCore
 from libgutenberg import GutenbergDatabaseDublinCore
 from libgutenberg import GutenbergGlobals as gg
 
-from . import DublinCoreI18n
-from .SupportedLocales import FB_LANGS, TWITTER_LANGS, GOOGLE_LANGS, PAYPAL_LANGS, FLATTR_LANGS
+import DublinCoreI18n
+from SupportedLocales import FB_LANGS, TWITTER_LANGS, GOOGLE_LANGS, PAYPAL_LANGS, FLATTR_LANGS
 
 VALID_PROTOCOLS = ('http', 'https')
 

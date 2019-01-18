@@ -25,7 +25,7 @@ from libgutenberg.GutenbergGlobals import Struct, xmlspecialchars
 from libgutenberg.MediaTypes import mediatypes as mt
 from libgutenberg import DublinCore
 
-from . import BaseFormatter
+import BaseFormatter
 from .Icons import THUMBS as th
 
 

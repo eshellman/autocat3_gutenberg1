@@ -19,7 +19,7 @@ import re
 
 from contextlib import closing
 
-from . import CloudStorage
+import CloudStorage
 
 
 class DropboxOAuth2Session (CloudStorage.CloudOAuth2Session):

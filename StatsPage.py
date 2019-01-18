@@ -16,10 +16,10 @@ from __future__ import unicode_literals
 
 import cherrypy
 
-from . import BaseSearcher
-from . import TemplatedPage
-from . import asyncdns
-from . import ipinfo
+import BaseSearcher
+import TemplatedPage
+import asyncdns
+import ipinfo
 
 
 class StatsPage (TemplatedPage.TemplatedPage):

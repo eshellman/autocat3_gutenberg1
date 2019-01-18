@@ -20,8 +20,8 @@ import cherrypy
 
 from libgutenberg.GutenbergDatabase import DatabaseError
 
-from . import BaseSearcher
-from . import Page
+import BaseSearcher
+import Page
 
 class Suggestions (Page.Page):
     """ Output the search suggestions page. """

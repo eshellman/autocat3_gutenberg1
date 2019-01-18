@@ -23,8 +23,8 @@ from six.moves import urllib
 
 from libgutenberg.MediaTypes import mediatypes as mt
 
-from . import BaseSearcher
-from . import BaseFormatter
+import BaseSearcher
+import BaseFormatter
 
 # filetypes ignored on desktop site
 NO_DESKTOP_FILETYPES = 'plucker qioo rdf rst rst.gen rst.master tei cover.medium cover.small'.split ()

@@ -19,7 +19,7 @@ import cherrypy
 from libgutenberg.MediaTypes import mediatypes as mt
 from libgutenberg.DublinCore import DublinCore
 
-from . import BaseSearcher
+import BaseSearcher
 from .Page import SearchPage
 
 

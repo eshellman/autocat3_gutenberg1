@@ -19,7 +19,7 @@ import six
 
 from libgutenberg import GutenbergGlobals as gg
 
-from . import BaseSearcher
+import BaseSearcher
 
 class CoverPages (object):
     """ Output a gallery of cover pages. """

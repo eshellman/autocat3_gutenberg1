@@ -18,8 +18,8 @@ import cherrypy
 
 from libgutenberg import GutenbergGlobals as gg
 
-from . import BaseSearcher
-from . import Page
+import BaseSearcher
+import Page
 
 
 class BibrecPage (Page.Page):

@@ -47,10 +47,10 @@ import requests
 import netaddr
 
 from libgutenberg.GutenbergDatabase import DatabaseError
-from . import BaseSearcher
-from . import Page
-from . import asyncdns
-from . import ipinfo
+import BaseSearcher
+import Page
+import asyncdns
+import ipinfo
 
 # no. of requests to keep in LIFO queue for each IP
 KEEP_REQUESTS = 10

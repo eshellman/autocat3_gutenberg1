@@ -14,8 +14,8 @@ The Search Start Page.
 
 from __future__ import unicode_literals
 
-from . import BaseSearcher
-from . import Page
+import BaseSearcher
+import Page
 
 class Start (Page.Page):
     """ The start page. """

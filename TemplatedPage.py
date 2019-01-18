@@ -19,8 +19,8 @@ import genshi.template
 from genshi.core import _ensure
 import cherrypy
 
-from . import Formatters
-from . import BaseSearcher
+import Formatters
+import BaseSearcher
 
 
 class TemplatedPage (object):
