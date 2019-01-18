@@ -29,30 +29,30 @@ from six.moves import builtins
 
 from libgutenberg import GutenbergDatabase
 
-# from . import i18nTool
+import i18n_tool
 # Make translator functions available everywhere. Do this early, at
 # least before Genshi starts loading templates.
-#builtins._     = i18n_tool.ugettext
-#builtins.__    = i18n_tool.ungettext
+builtins._     = i18n_tool.ugettext
+builtins.__    = i18n_tool.ungettext
 
-#from . import ConnectionPool
-from . import Page
-from . import StartPage
-from . import SuggestionsPage
-from .SearchPage import BookSearchPage, AuthorSearchPage, SubjectSearchPage, BookshelfSearchPage, \
+import ConnectionPool
+import Page
+import StartPage
+import SuggestionsPage
+from SearchPage import BookSearchPage, AuthorSearchPage, SubjectSearchPage, BookshelfSearchPage, \
     AuthorPage, SubjectPage, BookshelfPage, AlsoDownloadedPage
-from  .BibrecPage import BibrecPage
-from . import CoverPages
-from . import QRCodePage
-from . import StatsPage
-from . import CaptchaPage
-from . import Sitemap
-from . import Formatters
-from . import RateLimiter
+from BibrecPage import BibrecPage
+import CoverPages
+import QRCodePage
+import StatsPage
+import CaptchaPage
+import Sitemap
+import Formatters
+import RateLimiter
 
-from . import Timer
-from . import MyRamSession
-from . import PostgresSession
+import Timer
+import MyRamSession
+import PostgresSession
 
 cherrypy.lib.sessions.RamSession      = MyRamSession.FixedRamSession
 cherrypy.lib.sessions.MyramSession    = MyRamSession.MyRamSession
