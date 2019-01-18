@@ -26,7 +26,7 @@ from libgutenberg.MediaTypes import mediatypes as mt
 from libgutenberg import DublinCore
 
 import BaseFormatter
-from .Icons import THUMBS as th
+from Icons import THUMBS as th
 
 
 # files a mobile can download

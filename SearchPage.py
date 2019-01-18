@@ -20,7 +20,7 @@ from libgutenberg.MediaTypes import mediatypes as mt
 from libgutenberg.DublinCore import DublinCore
 
 import BaseSearcher
-from .Page import SearchPage
+from Page import SearchPage
 
 
 class BookSearchPage (SearchPage):
