@@ -29,4 +29,4 @@ Currently, we use the following steps to deploy autocat3 on a different server.
 4. **Check the virtual env path**: ```pipenv --venv```
 5. **Start virtual env**: ```pipenv shell```
 
-For codes: Copyright 2009-2010 by Marcello Perathoner
+                                                                                    Copyright 2009-2010 by Marcello Perathoner
