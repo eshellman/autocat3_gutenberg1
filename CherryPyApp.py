@@ -62,6 +62,7 @@ plugins.Timer = Timer.TimerPlugin
 
 if six.PY3:
     CHERRYPY_CONFIG = ('/etc/autocat3.conf', os.path.expanduser ('~/.autocat3'))
+    # CCHERRYPY_CONFIG = ('/etc/autocat3.conf')
 else:
     CHERRYPY_CONFIG = ('/etc/autocat.conf', os.path.expanduser ('~/.autocat'))
 
@@ -109,6 +110,7 @@ def main ():
     #
 
     # Remove the default FileHandlers if present.
+
     error_file = cherrypy.log.error_file
     access_file = cherrypy.log.access_file
     cherrypy.log.error_file = ""
@@ -116,7 +118,7 @@ def main ():
 
     max_bytes = getattr (cherrypy.log, "rot_max_bytes", 100 * 1024 * 1024)
     backup_count = getattr (cherrypy.log, "rot_backup_count", 2)
-
+    #print(os.path.abspath(error_file)+": Filehandler cherrypy")
     h = logging.handlers.RotatingFileHandler (error_file, 'a', max_bytes, backup_count, 'utf-8')
     h.setLevel (logging.DEBUG)
     h.setFormatter (cherrypy._cplogging.logfmt)
@@ -295,7 +297,7 @@ def main ():
                controller = Sitemap.Sitemap ())
 
     if 'dropbox_client_id' in cherrypy.config:
-        from . import Dropbox
+        import Dropbox
         dropbox = Dropbox.Dropbox ()
         cherrypy.log ("Dropbox Client Id: %s" % cherrypy.config['dropbox_client_id'],
                       context = 'ENGINE', severity = logging.INFO)
@@ -305,7 +307,7 @@ def main ():
                    controller = dropbox)
 
     if 'gdrive_client_id' in cherrypy.config:
-        from . import GDrive
+        import GDrive
         gdrive = GDrive.GDrive ()
         cherrypy.log ("GDrive Client Id: %s" % cherrypy.config['gdrive_client_id'],
                       context = 'ENGINE', severity = logging.INFO)
@@ -315,7 +317,7 @@ def main ():
                    controller = gdrive)
 
     if 'msdrive_client_id' in cherrypy.config:
-        from . import MSDrive
+        import MSDrive
         msdrive = MSDrive.MSDrive ()
         cherrypy.log ("MSDrive Client Id: %s" % cherrypy.config['msdrive_client_id'],
                       context = 'ENGINE', severity = logging.INFO)
